@@ -15,7 +15,6 @@ stages:
       dockerfilePath: ./Dockerfile
       buildContext: .
       tag: example-helloserver:${CICD_EXECUTION_SEQUENCE}
-      pushRemote: true
       registry: localhost:32500
 - name: Deploy
   steps:
